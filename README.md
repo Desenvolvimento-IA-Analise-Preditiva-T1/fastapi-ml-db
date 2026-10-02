@@ -1,10 +1,10 @@
-# 🗄️ API de Predição de Crédito (Deploy com SQLite)
+# API de Predição de Crédito (Deploy com SQLite)
 
 Este projeto implementa uma API utilizando **FastAPI** para servir predições de Machine Learning, onde o modelo treinado é persistido diretamente em um banco de dados relacional **SQLite** no formato binário (`BLOB`).
 
 ---
 
-## 🏗️ Arquitetura do Projeto
+## Arquitetura do Projeto
 
 1. **Serialização em Binário:** O script `modelo_ml.ipynb` transforma o objeto Python do modelo em uma sequência pura de bytes (`pickle.dumps`).
 2. **Persistência Relacional:** O modelo é salvo na tabela `modelos` do banco SQLite (`ia_banco.db`) usando a coluna do tipo `BLOB`.
